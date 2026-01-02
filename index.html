@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Royal Aviation Lanka | Premium Ground Handling Services</title>
+    <meta name="description" content="Royal Aviation Lanka is the most trusted & leading ground handling services provider in Sri Lanka. Approved by CAASL. 24/7 Operations." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <meta property="og:title" content="Royal Aviation Lanka" />
+    <meta property="og:description" content="Leading ground handling services provider in Sri Lanka." />
+    <meta property="og:image" content="wp-content/uploads/2015/03/royal-aviation-lanka-work-02.jpg" />
+    <meta property="og:url" content="https://www.royalaviationlanka.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon (match index.html) -->
+    <link rel="icon" href="wp-content/uploads/2020/07/cropped-aeroplane-logo-png-8-32x32.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/2020/07/cropped-aeroplane-logo-png-8-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="wp-content/uploads/2020/07/cropped-aeroplane-logo-png-8-180x180.png" />
+    <meta name="msapplication-TileImage" content="wp-content/uploads/2020/07/cropped-aeroplane-logo-png-8-270x270.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- MODERN CSS VARIABLES --- */
+        :root {
+            /* Palette: Deep Navy, Slate, and Royal Gold */
+            --color-primary: #0f172a;   /* Dark Navy */
+            --color-primary-light: #1e293b;
+            --color-accent: #d4af37;    /* Royal Gold */
+            --color-accent-hover: #b5952f;
+            --color-text: #334155;      /* Slate Grey */
+            --color-text-light: #64748b;
+            --color-bg: #f8fafc;        /* Off-white background */
+            --color-white: #ffffff;
+            
+            /* Spacing & Radius */
+            --container-width: 1200px;
+            --radius-md: 12px;
+            --radius-lg: 24px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            
+            /* Transitions */
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* --- RESET & BASE --- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; height: auto; }
+        
+        /* SVG Icons */
+        .icon { width: 1.25em; height: 1.25em; stroke-width: 2; fill: none; stroke: currentColor; vertical-align: middle; }
+
+        /* --- UTILITIES --- */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section { padding: 80px 0; }
+        .section-soft { background-color: var(--color-white); }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+        
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+        .btn-primary:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-ghost {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+        }
+        .btn-ghost:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-white {
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .btn-white:hover {
+            background-color: white;
+            color: var(--color-primary);
+        }
+
+        /* WhatsApp CTA button */
+        .btn-whatsapp {
+            background: #25D366;
+            color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+        .btn-whatsapp:hover {
+            background: #1fb85a;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* --- HEADER & NAV --- */
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 15px 0;
+            /* Make nav readable over hero imagery */
+            background: linear-gradient(180deg, rgba(15,23,42,0.65) 0%, rgba(15,23,42,0) 100%);
+        }
+        
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-sm);
+            padding: 10px 0;
+        }
+
+        /* Nav/link colors: light over hero, dark after scroll */
+        .header:not(.scrolled) .nav a {
+            color: rgba(255, 255, 255, 0.92);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+        }
+        .header:not(.scrolled) .menu-btn {
+            color: rgba(255, 255, 255, 0.92);
+        }
+        .header:not(.scrolled) .nav a::after {
+            background: var(--color-accent);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand img {
+            height: 50px;
+            width: auto;
+            transition: var(--transition);
+        }
+
+        /* Make sure the logo stays visible once header becomes light */
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+        }
+        .header.scrolled .brand {
+            background: var(--color-primary);
+            padding: 6px 10px;
+            box-shadow: var(--shadow-md);
+        }
+        .header.scrolled .brand img {
+            filter: drop-shadow(0 2px 10px rgba(0,0,0,0.22));
+        }
+
+        .nav { display: none; } /* Mobile default */
+        
+        @media (min-width: 992px) {
+            .nav {
+                display: flex;
+                gap: 30px;
+            }
+            .nav a {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: var(--color-primary);
+                position: relative;
+            }
+            .nav a::after {
+                content: '';
+                position: absolute;
+                bottom: -4px; left: 0; width: 0; height: 2px;
+                background: var(--color-accent);
+                transition: var(--transition);
+            }
+            .nav a:hover::after { width: 100%; }
+        }
+
+        /* Mobile Menu Button */
+        .menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--color-primary);
+        }
+        @media (min-width: 992px) { .menu-btn { display: none; } }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -2;
+        }
+        
+        /* Smooth Crossfade Slider using CSS only logic for simplicity */
+        .hero-bg img {
+            position: absolute;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        .hero-bg img.active { opacity: 1; }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(90deg, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.7) 50%, rgba(15,23,42,0.3) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        @media (min-width: 992px) {
+            .hero-content { grid-template-columns: 1.2fr 0.8fr; }
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero-actions { display: flex; gap: 15px; flex-wrap: wrap; }
+
+        /* Glass Card in Hero */
+        .hero-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            color: white;
+            align-self: center;
+        }
+
+        .hero-points li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .hero-points .icon { color: var(--color-accent); flex-shrink: 0; }
+
+        /* --- SECTIONS GENERAL --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .section-header p {
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+        }
+
+        /* --- ABOUT --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        @media (min-width: 992px) { .about-grid { grid-template-columns: 1fr 1fr; } }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+        .stat-card strong { display: block; font-size: 1.2rem; color: var(--color-primary); }
+        .stat-card span { font-size: 0.85rem; color: var(--color-text-light); }
+        .stat-card .icon { color: var(--color-accent); margin-bottom: 8px; width: 1.5em; height: 1.5em; }
+
+        /* --- SERVICES (Static Tiles) --- */
+        .services-wrapper {
+            display: grid;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 2x2 tiles on desktop/tablet */
+        @media (min-width: 768px) {
+            .services-wrapper {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* --- SERVICES + WORK (Fused Section) --- */
+        .services-work-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            align-items: start;
+        }
+        @media (min-width: 992px) {
+            .services-work-grid {
+                grid-template-columns: 1.05fr 0.95fr;
+                gap: 34px;
+            }
+        }
+        .services-work-block {
+            background: rgba(255, 255, 255, 0.65);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            box-shadow: var(--shadow-sm);
+        }
+        .services-work-block h3 {
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+        .services-work-block p.lead {
+            color: var(--color-text-light);
+            margin-bottom: 18px;
+        }
+        .anchor-target {
+            scroll-margin-top: 90px;
+        }
+
+        .service-tile {
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            padding: 25px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-tile:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        .service-tile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--color-accent);
+        }
+        .service-tile h3 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .service-tile .tile-icon {
+            width: 40px;
+            height: 40px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            flex: 0 0 auto;
+        }
+        .service-tile p { color: var(--color-text-light); margin-bottom: 10px; }
+        .service-tile ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style: disc;
+            color: var(--color-text-light);
+        }
+        .service-tile li { margin-bottom: 6px; }
+
+        /* Contact profile photo */
+        .contact-avatar {
+            width: 78px;
+            height: 78px;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 3px solid rgba(212,175,55,0.55);
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+
+        details.modern-fold {
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        details.modern-fold:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        
+        details.modern-fold summary {
+            padding: 25px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+        }
+        details.modern-fold summary::-webkit-details-marker { display: none; }
+        
+        .summary-content { display: flex; align-items: center; gap: 15px; }
+        .summary-icon { 
+            width: 40px; height: 40px; 
+            background: #f1f5f9; 
+            border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center;
+            color: var(--color-accent);
+        }
+
+        .fold-chevron {
+            transition: transform 0.3s ease;
+        }
+        details[open] .fold-chevron { transform: rotate(180deg); }
+        
+        .fold-content {
+            padding: 0 25px 25px 80px;
+            color: var(--color-text-light);
+            border-top: 1px solid #f1f5f9;
+            animation: slideDown 0.3s ease-out;
+        }
+        @media (max-width: 768px) { .fold-content { padding: 0 25px 25px 25px; } }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- WORK GALLERY --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15,23,42,0.6);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+        /* --- NEWS --- */
+        .news-section .section-header { margin-bottom: 34px; }
+
+        .news-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+        }
+        @media (min-width: 768px) { .news-card { grid-template-columns: 0.95fr 1.05fr; } }
+        
+        .news-img {
+            height: 320px;
+            width: 100%;
+            position: relative;
+        }
+        .news-img img { width: 100%; height: 100%; object-fit: cover; }
+        @media (min-width: 768px) {
+            .news-img { height: 100%; min-height: 420px; }
+        }
+        
+        .news-content {
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(180deg, rgba(248, 250, 252, 0.9) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        @media (min-width: 768px) { .news-content { padding: 30px; } }
+
+        .news-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .news-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, 0.12);
+            color: var(--color-primary);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .news-title {
+            margin: 0;
+            font-size: clamp(1.35rem, 1.7vw, 1.75rem);
+        }
+
+        .news-brand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+            padding: 12px 14px;
+            border-radius: 16px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(226, 232, 240, 0.95);
+        }
+        .news-brand-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .news-brand img {
+            height: 34px;
+            width: auto;
+        }
+        .news-brand p {
+            margin: 0;
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            line-height: 1.35;
+        }
+        .news-brand strong { color: var(--color-primary); }
+
+        .news-text {
+            color: var(--color-text-light);
+            margin: 0;
+        }
+
+        .news-facts {
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        @media (min-width: 768px) {
+            .news-facts { grid-template-columns: 1fr 1fr; }
+        }
+        .news-fact {
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            border-radius: 14px;
+            padding: 12px 14px;
+            box-shadow: var(--shadow-sm);
+        }
+        .news-fact strong {
+            display: block;
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            margin-bottom: 2px;
+        }
+        .news-fact span {
+            display: block;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* --- CONTACT --- */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        @media (min-width: 992px) { .contact-wrapper { grid-template-columns: 1fr 1.5fr; } }
+
+        .contact-info {
+            background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            width: 260px;
+            height: 260px;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, 0.16);
+            filter: blur(0px);
+        }
+        .contact-info::after {
+            content: '';
+            position: absolute;
+            bottom: -160px;
+            left: -160px;
+            width: 320px;
+            height: 320px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .contact-info > * { position: relative; z-index: 1; }
+
+        .contact-info h3 { color: white; margin-bottom: 20px; }
+        .contact-row { display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start; }
+        .contact-row .icon { color: var(--color-accent); margin-top: 4px; }
+
+        .contact-actions {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .contact-actions .btn {
+            padding: 10px 16px;
+            font-size: 0.9rem;
+        }
+        .contact-actions .btn-white {
+            background-color: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.22);
+        }
+        
+        .contact-form-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+        }
+
+        .contact-form-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background: var(--color-primary-light);
+            color: rgba(255,255,255,0.6);
+            padding: 40px 0;
+            margin-top: 80px;
+            font-size: 0.9rem;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer a:hover { color: white; }
+
+        /* Contact section integrated footer bar */
+        .contact-footerbar {
+            margin-top: 30px;
+            background: var(--color-primary-light);
+            color: rgba(255,255,255,0.7);
+            border-radius: var(--radius-lg);
+            padding: 22px 24px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .contact-footerbar .footer-inner { padding: 0; }
+        .contact-footerbar a {
+            color: rgba(255,255,255,0.8);
+        }
+        .contact-footerbar a:hover {
+            color: var(--color-white);
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .footer-brand img {
+            height: 32px;
+            width: auto;
+            background: rgba(15,23,42,0.4);
+            padding: 6px 10px;
+            border-radius: 999px;
+        }
+        .footer-brand small {
+            display: block;
+            color: rgba(255,255,255,0.65);
+            font-size: 0.85rem;
+        }
+        .contact-footerbar .footer-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        @media (max-width: 768px) {
+            .contact-footerbar .footer-inner { flex-direction: column; align-items: flex-start; }
+            .contact-footerbar .footer-links { justify-content: flex-start; }
+        }
+
+        /* Mobile Nav styling */
+        .mobile-menu {
+            position: fixed;
+            top: 70px; left: 0; right: 0;
+            background: white;
+            padding: 20px;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-150%);
+            transition: transform 0.3s ease;
+            z-index: 900;
+        }
+        .mobile-menu.active { transform: translateY(0); }
+        .mobile-menu a { display: block; padding: 15px 0; border-bottom: 1px solid #eee; font-weight: 600; }
+
+    </style>
+</head>
+
+<body id="home">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <symbol id="i-phone" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="i-map" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+        <symbol id="i-plane" viewBox="0 0 24 24"><path d="M2 12h20"/><path d="M13 5l7 7-7 7"/></symbol> <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+        <symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+    </svg>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="Royal Aviation Lanka">
+                <img src="wp-content/uploads/2020/07/royalaviationlanka.png" alt="Royal Aviation Lanka Logo">
+            </a>
+
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div style="display:flex; gap:10px; align-items:center;">
+                <a class="btn btn-primary" href="tel:+94718197889">
+                    <svg class="icon"><use href="#i-phone"></use></svg> <span style="display:none; @media(min-width:600px){display:inline;}">+94 71 819 7889</span>
+                </a>
+                <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#news" onclick="toggleMenu()">News</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <img class="hero-slide active" src="wp-content/uploads/2020/07/Royal-Aviation-Lanka-2.png" alt="Royal Aviation Lanka Operations">
+            <img class="hero-slide" src="wp-content/uploads/2020/07/World-biggest-Aircraft.jpg" alt="Big Aircraft Handling">
+            <img class="hero-slide" src="wp-content/uploads/2015/03/royal-aviation-lanka-work-02.jpg" alt="Ground Support">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Leading Ground Handling Services in Sri Lanka</h1>
+                <p>Approved by CAASL. Trusted by global carriers. We provide dynamic, safety-focused flight support for private jets, corporate airlines, and Medevac operations 24/7.</p>
+                
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-white">Contact Ops</a>
+                </div>
+            </div>
+
+            <aside class="hero-card">
+                <h3 style="color:var(--color-accent); margin-bottom:15px;">Why Royal Aviation?</h3>
+                <ul class="hero-points">
+                    <li><svg class="icon"><use href="#i-check"></use></svg> 24/7 Operations Support</li>
+                    <li><svg class="icon"><use href="#i-check"></use></svg> VIP & Executive Handling</li>
+                    <li><svg class="icon"><use href="#i-check"></use></svg> Permit & Refueling Coordination</li>
+                    <li><svg class="icon"><use href="#i-check"></use></svg> Crew Transport & Accommodation</li>
+                    <li><svg class="icon"><use href="#i-check"></use></svg> Ambulance & Emergency Ops</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h4 style="color:var(--color-accent); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">About Us</h4>
+                    <h2>Sri Lanka's Most Trusted Aviation Partner</h2>
+                    <p style="margin-bottom:20px; color:var(--color-text-light);">
+                        ROYAL AVIATION LANKA is incorporated under the Sri Lankan business registration act and duly approved by CAASL. We are an independent facilitator offering professional flight support services to scheduled, non-scheduled, and Medevac flights worldwide.
+                    </p>
+                    <p style="color:var(--color-text-light);">
+                        Our operations team simplifies your journey, working in close collaboration from pre-planning to safe completion. From landing permits to diplomatic clearances, we handle it all.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <svg class="icon"><use href="#i-phone"></use></svg>
+                            <strong>24/7</strong>
+                            <span>Support</span>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="icon"><use href="#i-check"></use></svg>
+                            <strong>100%</strong>
+                            <span>Secure</span>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="icon"><use href="#i-map"></use></svg>
+                            <strong>Global</strong>
+                            <span>Reach</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="position:relative;">
+                    <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-04.jpg" alt="Team at work" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);">
+                    <div style="position:absolute; bottom:-30px; left:-20px; background:white; padding:20px; border-radius:var(--radius-md); box-shadow:var(--shadow-lg); max-width:200px;">
+                        <p style="font-size:0.9rem; font-weight:600; color:var(--color-primary);">"Precision in every landing."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section" style="background: #f1f5f9;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>From touchdown to takeoff — safety-first ground support, backed by real ramp operations.</p>
+            </div>
+
+            <div class="services-work-block" style="max-width: 1100px; margin: 0 auto;">
+                <p class="lead">Structured, safety-first support for private, corporate, scheduled, and Medevac operations.</p>
+
+                <div class="services-wrapper" style="max-width:none; margin:0;">
+                    <article class="service-tile">
+                        <h3>
+                            <span class="tile-icon"><svg class="icon"><use href="#i-plane"></use></svg></span>
+                            <span>Ground Handling Services</span>
+                        </h3>
+                        <p>Receiving an aircraft upon arrival and preparing it to depart requires clockwork precision.</p>
+                        <ul>
+                            <li>Passenger handling & manifesting</li>
+                            <li>Check-in, gate, departure & arrival clearance</li>
+                            <li>General Declaration clearances</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-tile">
+                        <h3>
+                            <span class="tile-icon"><svg class="icon"><use href="#i-check"></use></svg></span>
+                            <span>Ramp Handling</span>
+                        </h3>
+                        <p>Trained professional staff to assist with handling for both private and commercial flights.</p>
+                        <ul>
+                            <li>Pushback, towing and repositioning</li>
+                            <li>Loading and unloading</li>
+                            <li>Air start, ramp services, aircraft cleaning</li>
+                            <li>Potable water & In-flight catering</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-tile">
+                        <h3>
+                            <span class="tile-icon"><svg class="icon"><use href="#i-map"></use></svg></span>
+                            <span>Flight Dispatch & Planning</span>
+                        </h3>
+                        <p>Flight Dispatch takes control of day-to-day operations including planning and monitoring.</p>
+                        <ul>
+                            <li>Computerized flight plan with weather forecast & NOTAM</li>
+                            <li>ATC flight plan filing & crew briefing</li>
+                            <li>24/7 flight monitoring (SITA/Email)</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-tile">
+                        <h3>
+                            <span class="tile-icon"><svg class="icon"><use href="#i-check"></use></svg></span>
+                            <span>Permits & Documentation</span>
+                        </h3>
+                        <p>We coordinate vital documents before any flight enters Sri Lankan airspace.</p>
+                        <ul>
+                            <li>24/7 Over-fly & Landing permits</li>
+                            <li>Diplomatic clearances</li>
+                            <li>Carrier representation before CAASL</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div style="margin-top: 26px;">
+                    <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Proven on the Ramp</h3>
+                    <p class="lead" style="margin-bottom: 18px;">Work photos showing our teams and operations supporting aircraft turnarounds.</p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-03.jpg" alt="Ground operations support" loading="lazy">
+                            <div class="gallery-overlay">Ground Ops</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-01.jpg" alt="Ramp handling support" loading="lazy">
+                            <div class="gallery-overlay">Ramp Handling</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/img77.png" alt="VIP services support" loading="lazy">
+                            <div class="gallery-overlay">VIP Services</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-05.jpg" alt="Crew support" loading="lazy">
+                            <div class="gallery-overlay">Crew Support</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-04.jpg" alt="Turnaround coordination" loading="lazy">
+                            <div class="gallery-overlay">Turnaround</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-02.jpg" alt="Flight support operations" loading="lazy">
+                            <div class="gallery-overlay">Flight Support</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/img66.png" alt="Operations support" loading="lazy">
+                            <div class="gallery-overlay">Operations</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="wp-content/uploads/2015/03/royal-aviation-lanka-work-07.jpg" alt="Ground team" loading="lazy">
+                            <div class="gallery-overlay">Ground Team</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="wp-content/uploads/2020/07/World-biggest-Aircraft.jpg" alt="Biggest Aircraft">
+                </div>
+                <div class="news-content">
+                    <div class="news-kicker">
+                        <span class="news-pill">Mattala Case</span>
+                    </div>
+                    <h3 class="news-title">Antonov An‑225 “Mriya” — The World’s Biggest Aircraft</h3>
+                    <div class="news-brand" aria-label="Royal Aviation Lanka handling at Mattala">
+                        <div class="news-brand-left">
+                            <img src="wp-content/uploads/2020/07/royalaviationlanka.png" alt="Royal Aviation Lanka">
+                            <p><strong>Royal Aviation Lanka</strong> supported ground handling coordination for the An‑225 visit at <strong>Mattala (MRIA)</strong>.</p>
+                        </div>
+                    </div>
+                    <p class="news-text">
+                        The Antonov An‑225 “Mriya” (Ukrainian for “Dream”) was a one‑of‑a‑kind strategic airlift cargo aircraft, engineered for outsized payload missions and derived from the An‑124 platform. Its arrival required precise planning, strict ramp discipline, and coordinated, safety‑first ground support.
+                    </p>
+                    <p class="news-text">
+                        It gained worldwide attention for its unmatched size and capability — and it became an aviation landmark whenever it visited an airport.
+                    </p>
+                    <div class="news-facts" aria-label="Antonov An-225 key facts">
+                        <div class="news-fact"><strong>Maiden flight</strong><span>21 December 1988</span></div>
+                        <div class="news-fact"><strong>Engines</strong><span>Six Progress D‑18T turbofans</span></div>
+                        <div class="news-fact"><strong>Dimensions</strong><span>84 m length • 88.4 m wingspan</span></div>
+                        <div class="news-fact"><strong>Maximum takeoff weight</strong><span>640 tonnes</span></div>
+                        <div class="news-fact"><strong>Uniqueness</strong><span>Only one aircraft was completed</span></div>
+                        <div class="news-fact"><strong>Status</strong><span>Destroyed in February 2022</span></div>
+                    </div>
+                    <p class="news-text">
+                        The world’s biggest aircraft landing at Mattala was a remarkable moment for Sri Lankan aviation. Royal Aviation Lanka supports complex movements with a safety‑first mindset and a detail‑driven operations team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-soft">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Operations</h2>
+                <p>24/7 operations support — fast response for permits, handling, and dispatch.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-row">
+                        <svg class="icon"><use href="#i-map"></use></svg>
+                        <div>
+                            <strong>Head Office</strong><br>
+                            81/16, Kalyani Road,<br>Wattala, Sri Lanka.
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <svg class="icon"><use href="#i-phone"></use></svg>
+                        <div>
+                            <strong>Phone (24/7)</strong><br>
+                            <a href="tel:+94718197889" style="text-decoration:underline;">+94 71 819 7889</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <svg class="icon"><use href="#i-mail"></use></svg>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:operations@royalaviationlanka.com">operations@royalaviationlanka.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions" aria-label="Quick contact actions">
+                        <a class="btn btn-whatsapp" href="https://wa.me/94718197889" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon"><use href="#i-whatsapp"></use></svg> WhatsApp
+                        </a>
+                        <a class="btn btn-white" href="tel:+94718197889">
+                            <svg class="icon"><use href="#i-phone"></use></svg> Call
+                        </a>
+                        <a class="btn btn-white" href="mailto:operations@royalaviationlanka.com">
+                            <svg class="icon"><use href="#i-mail"></use></svg> Email
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top:30px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; gap:14px;">
+                        <img class="contact-avatar" src="wp-content/uploads/2020/07/services.png" alt="C. H. Kuruppu">
+                        <p style="margin:0;"><strong>C. H. Kuruppu</strong><br>Director Operations</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3 style="margin-bottom:20px; color:var(--color-primary);">
+                        <svg class="icon" style="color: var(--color-accent);"><use href="#i-whatsapp"></use></svg>
+                        Quick Inquiry via WhatsApp
+                    </h3>
+                    <form id="contactWhatsAppForm">
+                        <div class="form-group">
+                            <label for="waName">Your Name</label>
+                            <input type="text" id="waName" class="form-control" required placeholder="Captain / Dispatcher Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="waCompany">Company</label>
+                            <input type="text" id="waCompany" class="form-control" placeholder="Airline / Operator">
+                        </div>
+                        <div class="form-group">
+                            <label for="waMessage">Message</label>
+                            <textarea id="waMessage" class="form-control" rows="4" required placeholder="I need a landing permit for..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-whatsapp" style="width:100%; justify-content:center;">
+                            <svg class="icon"><use href="#i-whatsapp"></use></svg> Send Message
+                        </button>
+                        <p style="font-size:0.8rem; color:var(--color-text-light); margin-top:10px; text-align:center;">
+                            This will open WhatsApp with your pre-filled message.
+                        </p>
+                    </form>
+                </div>
+            </div>
+            
+            <div style="margin-top:50px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); height:350px;">
+                <iframe
+                    width="100%" height="100%" frameborder="0" style="border:0"
+                    loading="lazy"
+                    src="https://maps.google.com/maps?q=Royal%20Aviation%20Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    title="Royal Aviation Lanka location">
+                </iframe>
+            </div>
+
+			<div class="contact-footerbar" aria-label="Site footer">
+				<div class="footer-inner">
+                    <div class="footer-brand">
+                        <img src="wp-content/uploads/2020/07/royalaviationlanka.png" alt="Royal Aviation Lanka">
+                        <div>
+                            <div>© <span id="year"></span> Royal Aviation Lanka (Pvt) Ltd.</div>
+                            <small>Premium ground handling & flight support • Sri Lanka</small>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#services">Services</a>
+                        <a href="#news">News</a>
+                        <a href="https://www.facebook.com/RoyalAviationServicespvtLtd" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="#home">Back to top</a>
+                    </div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <script>
+        // Set Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Hero Image Slider (Simple Crossfade)
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 5000); // Change every 5 seconds
+
+        // WhatsApp Form Handler
+        document.getElementById('contactWhatsAppForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('waName').value;
+            const company = document.getElementById('waCompany').value;
+            const message = document.getElementById('waMessage').value;
+
+            const text = `Hello Royal Aviation,\n\nName: ${name}\nCompany: ${company}\n\nMessage: ${message}`;
+            const url = `https://wa.me/94718197889?text=${encodeURIComponent(text)}`;
+            
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>

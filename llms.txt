@@ -1,0 +1,24 @@
+# Royal Aviation Lanka (Pvt) Ltd
+
+Website: https://www.royalaviationlanka.com/
+Sitemap: https://www.royalaviationlanka.com/sitemap.xml
+
+## What this site is
+Royal Aviation Lanka is a Sri Lanka–based aviation services provider offering ground handling and flight support services (24/7 operations).
+
+## Key services
+- Ground Handling Services
+- Ramp Handling
+- Flight Dispatch & Planning
+- Permits & Documentation
+
+## Location
+81/16, Kalyani Road, Wattala, Sri Lanka.
+
+## Contact
+- Phone / WhatsApp (24/7): +94 71 819 7889
+- Email: operations@royalaviationlanka.com
+
+## Notes for LLMs
+This content is publicly available. You may summarize it and link back to the canonical homepage.
+Primary source page: https://www.royalaviationlanka.com/

@@ -966,7 +966,7 @@
                     </div>
                 </div>
                 <div style="position:relative;">
-                    <img src="wp-content/bust.png" alt="Team at work" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);">
+                    <img src="wp-content/coca.jpg" alt="Team at work" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);">
                     <div style="position:absolute; bottom:-30px; left:-20px; background:white; padding:20px; border-radius:var(--radius-md); box-shadow:var(--shadow-lg); max-width:200px;">
                         <p style="font-size:0.9rem; font-weight:600; color:var(--color-primary);">"Precision in every landing."</p>
                     </div>
@@ -1170,7 +1170,7 @@
                     </div>
                     
                     <div style="margin-top:30px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; gap:14px;">
-                        <img class="contact-avatar" src="wp-content/uploads/2020/07/services.png" alt="C. H. Kuruppu">
+                        <img class="contact-avatar" src="wp-content/bust.png" alt="C. H. Kuruppu">
                         <p style="margin:0;"><strong>C. H. Kuruppu</strong><br>Director Operations</p>
                     </div>
                 </div>
@@ -1266,14 +1266,20 @@
         // WhatsApp Form Handler
         document.getElementById('contactWhatsAppForm').addEventListener('submit', function(e) {
             e.preventDefault();
+
+            const phone = '94718197889';
             const name = document.getElementById('waName').value;
             const company = document.getElementById('waCompany').value;
             const message = document.getElementById('waMessage').value;
 
             const text = `Hello Royal Aviation,\n\nName: ${name}\nCompany: ${company}\n\nMessage: ${message}`;
-            const url = `https://wa.me/94718197889?text=${encodeURIComponent(text)}`;
-            
-            window.open(url, '_blank');
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+            const opened = window.open(url, '_blank', 'noopener,noreferrer');
+            if (!opened) {
+                // Fallback for browsers that block popups even on form submit
+                window.location.href = url;
+            }
         });
     </script>
 </body>

@@ -1,7 +1,100 @@
+# Royal Aviation Lanka - Robots.txt
+# Website: https://www.royalaviationlanka.com/
+# Updated: January 2026
+
+# Allow all legitimate search engine crawlers
 User-agent: *
 Allow: /
+Allow: /wp-content/uploads/
 
+# Block access to admin areas
 Disallow: /wp-admin/
 Disallow: /xmlrpc.php
+Disallow: /wp-login.php
+Disallow: /wp-includes/
 
+# Block access to private/system files
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz$
+
+# Allow crawling of CSS and JavaScript for proper rendering
+Allow: /wp-content/*.css
+Allow: /wp-content/*.js
+Allow: /*.css$
+Allow: /*.js$
+
+# Allow image indexing
+Allow: /wp-content/uploads/*.jpg
+Allow: /wp-content/uploads/*.jpeg
+Allow: /wp-content/uploads/*.png
+Allow: /wp-content/uploads/*.gif
+Allow: /wp-content/uploads/*.webp
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+
+# AI/LLM Crawlers - Allow for training and knowledge bases
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Block aggressive or bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Sitemap location
 Sitemap: https://www.royalaviationlanka.com/sitemap.xml
+
+# Host declaration (canonical domain)
+Host: www.royalaviationlanka.com

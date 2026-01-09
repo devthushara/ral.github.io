@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://www.royalaviationlanka.com/</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.royalaviationlanka.com/wp-content/uploads/2020/07/royalaviationlanka.png</image:loc>
+      <image:title>Royal Aviation Lanka Logo</image:title>
+      <image:caption>CAASL-approved ground handling services provider</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.royalaviationlanka.com/wp-content/uploads/2020/07/World-biggest-Aircraft.jpg</image:loc>
+      <image:title>Antonov An-225 at Mattala Airport</image:title>
+      <image:caption>World's biggest aircraft handled by Royal Aviation Lanka</image:caption>
+    </image:image>
   </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://www.royalaviationlanka.com/#about</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.royalaviationlanka.com/#services</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- News Section -->
+  <url>
+    <loc>https://www.royalaviationlanka.com/#news</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.royalaviationlanka.com/#contact</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- LLM-specific content file -->
+  <url>
+    <loc>https://www.royalaviationlanka.com/llms.txt</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 </urlset>
